@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header-title {
+    font-family: 'Nova Square', sans-serif;
+    color: rgb(16, 88, 150);
+    font-size: 70px;
+    margin-left: 2rem;
+}
+.header-shortcut {
+    font-family: 'Nova Square', sans-serif;
+    color: rgb(16, 88, 150);
+    font-size: 35px;
+    margin-right: 4rem;
+    margin-top: 7rem;
+    display: inline-block;
+}
+
+.header-container {
+    height: 12.5rem;
+    background-image: url(img/header.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.dropdown {
+    list-style: none;
+    display: bock;
+}
+
+
+/* Main section */
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    font-family: 'Kanit', sans-serif;
+     
+}
+
+.github-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem;
+    
+}
+
+.main-portfolio {    
+    padding-left: 2rem;
+    border-left: solid 1px;
+    border-right: solid 1px;
+
+}
+
+.portfolio-links{
+    padding: 2;
+}
+
+#projects {
+    font-size: 40px;
+}
+#account{
+    text-decoration: none;
+    font-size: 30px;
+}
+.container2 {
+    display: flex;
+    
+}
+
+#assigments{
+    font-size: 25px;
+}
+#pictures { 
+    height: 200px;
+    width: 200p;
+}
+#text{
+    font-size: 25px;
+    padding-left: 1rem;
+
+}
+
+footer{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+#account a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.assigments-ghub{
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#border-up {
+    border-top: solid 1px;
+}
+
