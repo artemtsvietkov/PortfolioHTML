@@ -15,15 +15,14 @@
     <header class="header-container">
         <h1 class="header-title">Tsvietkov's portfolio</h1>
         <div class="header-shortcut">
-            <nav class="header-navigation">
-                <a href="#">Shortcut
+            <ul>
+                <li><a href="#" id="shortcut-title">Shortcut &#x25BE</a>
                     <ul class="dropdown">
-                        <li><a href="#">My projects</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li id="shortcut-titles"><a href="#projects">Projects</a></li>
+                        <li id="shortcut-titles"><a href="#contact">Contact me</a></li>
                     </ul>
-                </a>
-            </nav>           
+                </li>
+            </ul>        
         </div>
         
     </header>
@@ -34,56 +33,82 @@
             <h3>Links to my assigments on Github!</h3>
             <nav class="assigments-ghub">
                 <li><a href="https://github.com/artemtsvietkov/Modul1" target="_blank">First assigment</a></li>
-                <li><a href="">Second assigment</a></li>
-                <li><a href="">Third assigment</a></li>
-                <li><a href="">Fourth assgiment</a></li>
+                <li><a href="https://github.com/artemtsvietkov/Modul-2" target="_blank">Second assigment</a></li>
+                <li><a href="https://github.com/artemtsvietkov/sticky-uppgift5" target="_blank">Third assigment</a></li>
+                <li><a href="https://github.com/artemtsvietkov/Uppgift-4" target="_blank">Fourth assgiment</a></li>
                 <li><a href="https://github.com/artemtsvietkov/modul5-del2" target="_blank">Fifth assigment</a></li>
             </nav>               
         </aside>
         <section class="main-portfolio">
             <h3 id="projects">My projects</h3>
-                <div class="container1" id="assig">
-                <p id="assigments">First assigment</p>
+                <div class="container1" id="assig">   
+                <p id="assigment1">First assigment</p>
                     <div class="container2">
-                        <img src="img/projpic1.JPG" alt="project1" id="pictures">
+                        <a href="projects/proj1/index.html" target="_blank">
+                        <img src="img/projpic1.JPG" alt="project1" id="pictures"></a>
                         <p id="text">First steps in HTML.</p>
                     </div>
                 </div>
                 <div class="container1" id="assig"> 
-                <p id="assigments">Second assigment</p>
+                <p id="assigment2">Second assigment</p>
                     <div class="container2">
-                        <img src="img/projpic2.JPG" alt="project2" id="pictures">
+                        <a href="projects/proj2/index.html" target="_blank">
+                        <img src="img/projpic2.JPG" alt="project2" id="pictures"></a>
                         <p id="text">A little bit "ankara" exercise.</p>
                     </div>
                 </div>    
                 <div class="container1" id="assig"> 
-                <p id="assigments">Third assigment</p>
+                <p id="assigment3">Third assigment</p>
                     <div class="container2">
-                        <img src="img/projpic3.JPG" alt="project3" id="pictures">
+                        <a href="projects/proj4/index.html" target="_blank">
+                        <img src="img/projpic3.JPG" alt="project3" id="pictures"></a>
                         <p id="text">Simple list with "sticky" CSS.</p>
                     </div>
                 </div>
                 <div class="container1" id="assig"> 
-                    <p id="assigments">Fourth assigment</p>
+                    <p id="assigment4">Fourth assigment</p>
                         <div class="container2">
-                            <img src="img/projpic4.JPG" alt="Animation" id="pictures">
+                            <a href="projects/proj3/index.html" target="_blank">
+                            <img src="img/projpic4.JPG" alt="Animation" id="pictures"></a>
                             <p id="text">Simple animation.</p>
                         </div>
                     </div>
                 <div class="container1">
-                <p id="assigments">Fifth assigment</p>
+                <p id="assigment5">Fifth assigment</p>
                     <div class="container2">
-                        <img src="img/projpic5.JPG" alt="Simple website" id="pictures">
+                        <a href="projects/proj5/index.html" target="_blank">
+                        <img src="img/projpic5.JPG" alt="Simple website" id="pictures"></a>
                         <p id="text">Website with simple functions</p>
                     </div>
                 </div>
         </section>
-        <aside class="portfolio-links">
-            sd
+        <aside class="content-panel">
+            <p class="content-panel__title">Subjects</p>
+            <ol class="content-panel__list" type="I">
+                <li>
+                    <a href="#Mina uppgifter" class="content-panel__link">My assigments</a>
+                    <ol class="content-panel__list">
+                        <li>__________________</li>
+                        <li><a href="#assigment1" class="content-panel__link">HTML. First steps</a></li>
+                        <li><a href="#assigment2" class="content-panel__link">"Ankara"</a></li>
+                        <li><a href="#assigment3" class="content-panel__link">Simple sticky list</a></li>
+                        <li><a href="#assigment4" class="content-panel__link">Flexbox</a></li>
+                        <li><a href="#assigment5" class="content-panel__link">Copy of a website</a></li>
+                        <li>__________________</li>
+                    </ol>
+                </li>
+            </ol>
         </aside>
     </main>
-    <footer>
-        ggg
+    <footer class="contact-info">
+        <div class="contact-icons" id="contact">
+            <a href="https://www.instagram.com/psychox_cs/" target="_blank">
+            <img src="img/instagram.png" alt="Instagram" id="sm-icons"></a>
+            <a href="https://www.facebook.com/profile.php?id=100085640929983" target="_blank">
+            <img src="img/facebook.png" alt="Facebook" id="sm-icons"></a>
+            <a href="https://www.linkedin.com/in/artem-tsvietkov-818027275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+            <img src="img/linkedin.png" alt="Linkedin" id="sm-icons"></a>    
+        </div>
     </footer>
 </body>
 </html>

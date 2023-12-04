@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    
 }
 .header-title {
     font-family: 'Nova Square', sans-serif;
@@ -8,26 +9,56 @@ body{
     font-size: 70px;
     margin-left: 2rem;
 }
-.header-shortcut {
-    font-family: 'Nova Square', sans-serif;
-    color: rgb(16, 88, 150);
-    font-size: 35px;
-    margin-right: 4rem;
-    margin-top: 7rem;
-    display: inline-block;
-}
+
 
 .header-container {
     height: 12.5rem;
-    background-image: url(img/header.jpg);
+    background-image: url(img/bg.jpg);
     display: flex;
     justify-content: space-between;
     align-items: center;
     
 }
-.dropdown {
+#shortcut-title{
+    margin-top: 8rem;
+    font-family: 'Nova Square', sans-serif;
+    font-size: 40px;
+    margin-right: 25rem;
+}
+
+ul{
     list-style: none;
-    display: bock;
+}
+ul li{ 
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 15px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+ul li ul.dropdown li{ 
+    display: block;
+    font-size: large;
+}
+
+ul li ul.dropdown {
+    width: auto;
+    
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background: #054779;
+    color: white;
+}
+ul li:hover ul.dropdown{ 
+    display: block;
+    color: white;
 }
 
 
@@ -86,10 +117,7 @@ body{
 }
 
 footer{
-    background-color: aliceblue;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-image: url(img/bg.jpg);
     height: 100px;
 }
 #account a {
@@ -103,7 +131,65 @@ li{
     font-size: 25px;
 }
 
-#border-up {
-    border-top: solid 1px;
+.content-panel {
+    height: fit-content;
+    
+    background-color: #FEFEFE;
+    box-shadow: 0px 0px 3px #e1e1e1;
+    
+    
+    font-size: 25px;
+    padding: 1rem;
+  
+    position: sticky;
+    top: 0px;
+  }
+.content-panel__list {
+    padding-left: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+  
+  
+.content-panel__title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+  
+  
+.content-panel__link {
+    color: #106dee;
+    border-bottom: 1px dotted #a3a3a3;
+    padding-block: 3px;
+}
+  
+  
+.content-panel__link:hover {
+    border-bottom: 1px solid #127346;
+    color: #276c3e;
+    background: linear-gradient(1000deg,#c7c4f1, transparent);
+}
+ol li {
+
+    text-align: center;
 }
 
+#sm-icons {
+    height: 50px;
+    width: 50px;
+}
+
+.contact-info { 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+}
+.contact-icons {
+    
+    gap: 100px;
+}
+
+p {
+    font-size: 25px;
+}
